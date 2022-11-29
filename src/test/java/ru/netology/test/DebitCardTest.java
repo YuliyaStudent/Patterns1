@@ -23,8 +23,8 @@ public class DebitCardTest {
     void shouldSuccessfulPlanAndReplanMeeting() {
         $("[data-test-id=city] input").setValue(DataGenerator.generateCity());
         $("[data-test-id=date] input").sendKeys(DELETE, DataGenerator.generateDate(3));
-        $("[data-test-id=name] input").sendKeys(DataGenerator.generateName("ru"));
-        $("[data-test-id=phone] input").sendKeys(DataGenerator.generatePhone("ru"));
+        $("[data-test-id=name] input").setValue(DataGenerator.generateName("ru"));
+        $("[data-test-id=phone] input").setValue(DataGenerator.generatePhone("ru"));
         $("[data-test-id=agreement]").click();
         $("button.button").click();
         $(byText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
