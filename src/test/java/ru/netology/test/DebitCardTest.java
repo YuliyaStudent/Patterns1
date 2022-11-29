@@ -20,7 +20,7 @@ public class DebitCardTest {
 
     @Test
     @DisplayName("Should successful plan and replan meeting")
-    void shouldSuccessfulPlan() {
+    void shouldSuccessfulPlanAndReplanMeeting() {
         $("[data-test-id=city] input").setValue(DataGenerator.generateCity());
         $("[data-test-id=date] input").sendKeys(DELETE, DataGenerator.generateDate(3));
         $("[data-test-id=name] input").sendKeys(DataGenerator.generateName("ru"));
