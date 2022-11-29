@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import ru.netology.data.DataGenerator;
 
 import java.time.Duration;
-
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
